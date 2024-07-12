@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <bds />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>BigDevSoon - Dashboard Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100 font-roboto">
+    <div class="flex flex-col items-center py-10">
+      <header class="mb-5">
+        <h1 class="text-4xl font-bold">CHARACTER GENERATOR</h1>
+      </header>
+
+      <main class="flex flex-col md:flex-row items-start bg-white p-10 rounded-lg shadow-lg">
+        <!-- Character display area -->
+        <div class="flex flex-col items-center mb-5 md:mb-0 md:mr-10">
+          <div class="w-64 h-64 bg-purple-500 flex items-center justify-center mb-5">
+            <img src="./assets/character-images-left-side/default/basic-character.png" alt="Character Image" class="w-48 h-48">
+          </div>
+          <div class="flex space-x-3">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded flex items-center">
+              <i class="fas fa-random mr-2"></i>Random
+            </button>
+            <button class="bg-gray-200 text-black px-4 py-2 rounded flex items-center">
+              <i class="fas fa-download mr-2"></i>Download
+            </button>
+          </div>
+        </div>
+
+        <!-- Customization area -->
+         <div>
+          <h2 class="text-xl font-bold mb-5">Customize Look</h2>
+          <div class="flex flex-wrap gap-3 mb-5">
+            <button class="bg-white border border-gray-300 px-4 py-2 rounded">Hair</button>
+            <button class="bg-white border border-gray-300 px-4 py-2 rounded">Eyes</button>
+            <button class="bg-white border border-gray-300 px-4 py-2 rounded">Ears</button>
+            <button class="bg-white border border-gray-300 px-4 py-2 rounded">Mouth</button>
+            <button class="bg-white border border-gray-300 px-4 py-2 rounded">Background</button>
+            <button class="bg-white border border-gray-300 px-4 py-2 rounded">Accessories</button>
+          </div>
+
+          <!-- Background color selection -->
+           <div class="grid grid-cols-3 gap-3">
+            <div class="w-16 h-16 bg-gray-400 cursor-pointer"></div>
+            <div class="w-16 h-16 bg-blue-500 cursor-pointer"></div>
+            <div class="w-16 h-16 bg-purple-500 cursor-pointer relative">
+              <i class="fas fa-check absolute top-1 right-1 text-white"></i>
+            </div>
+            <div class="w-16 h-16 bg-green-500 cursor-pointer"></div>
+            <div class="w-16 h-16 bg-yellow-500 cursor-pointer"></div>
+            <div class="w-16 h-16 bg-orange-500 cursor-pointer"></div>
+           </div>
+         </div>
+      </main>
+    </div>
+
+
+
+
+    <div class="footer">
+      <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
+        >Project by BigDevSoon</a
+      >
+      |
+      <span>Built with ❤️ by [ME]</span>
+    </div>
+  </body>
+</html>
